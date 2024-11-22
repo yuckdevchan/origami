@@ -180,7 +180,7 @@
       <div class="button shop" onclick="shop_open();">
         SKINS
       </div>
-      <div id="skinUnlocked"></div>
+      <div id="SkinUnlocked"></div>
     </div>
   </div>
 </div>
@@ -221,15 +221,19 @@
 </div>
 <div class="close" onclick="shop_close();">&times;</div>
 <script>
-  function shop_open() { $('#overlayShop,#shop').fadeIn(); window.shop.doWhenOpen(); }
+  function shop_open() {
+    $('#overlayShop,#shop').fadeIn();
+    window.shop.doWhenOpen();
+    $('#fireworks').css('display', 'block');
+  }
   function shop_close() {
-    $('#overlayShop,#shop').fadeOut();
-
+    $('#overlayShop,#shop');
     window.ga('send', 'event', 'skins', window.shop.btnsData.find(function (data) {return data.useId === window.shop.chosenSkin}).name);
+    $('#fireworks').css('display', 'none');
   }
 </script>
 </div>
-    <div id="fireworks"></div>
+    <div id="fireworks" style="display: none;"></div>
     <script src="bundle.js?v13"></script>
     <script>
 	window.playerId = 308538594;
@@ -275,13 +279,14 @@
   <script src="/newpaperio/scripts/loadCSS.js"></script>
   <script src="/newpaperio/scripts/onloadCSS.js"></script>
   <script src="/advert.js"></script>
-<form id="formAgar" action="/agar/" method="post"><input id="agarNickName" name="agarNickName" type="text" value=""></form>
-<form id="formJumpFall" action="/jumpfall/" method="post"><input id="jumpfallNickName" name="jumpfallNickName" type="text" value=""></form>
-<form id="formPaper3d" action="/3d/" method="post"><input id="paper3dNickName" name="paper3dNickName" type="text" value=""></form>
-<form id="formConflict" action="https://paper-io.com/conflict/submit.php" method="post"><input id="conflictNickName" name="conflictNickName" type="text" value=""></form>	
-<form id="formWorldMap" action="https://paper-io.com/worldmap/submit.php" method="post"><input id="worldmapNickName" name="worldmapNickName" type="text" value=""></form>	
-<form id="formTeams" action="https://paper-io.com/teams/submit.php" method="post"><input id="teamsNickName" name="teamsNickName" type="text" value=""></form>	
-<form id="formBR" action="https://paper-io.com/battleroyale/submit.php" method="post"><input id="brNickName" name="brNickName" type="text" value=""></form>	
-<form id="formSkibidi" action="https://paper-io.com/skibidi/submit.php" method="post"><input id="skibidiNickName" name="skibidiNickName" type="text" value=""></form>	
+  <script src="/origami.js"></script>
+  <!-- <form id="formAgar" action="/agar/" method="post"><input id="agarNickName" name="agarNickName" type="text" value=""></form>
+  <form id="formJumpFall" action="/jumpfall/" method="post"><input id="jumpfallNickName" name="jumpfallNickName" type="text" value=""></form>
+  <form id="formPaper3d" action="/3d/" method="post"><input id="paper3dNickName" name="paper3dNickName" type="text" value=""></form>
+  <form id="formConflict" action="https://paper-io.com/conflict/submit.php" method="post"><input id="conflictNickName" name="conflictNickName" type="text" value=""></form>	
+  <form id="formWorldMap" action="https://paper-io.com/worldmap/submit.php" method="post"><input id="worldmapNickName" name="worldmapNickName" type="text" value=""></form>	
+  <form id="formTeams" action="https://paper-io.com/teams/submit.php" method="post"><input id="teamsNickName" name="teamsNickName" type="text" value=""></form>	
+  <form id="formBR" action="https://paper-io.com/battleroyale/submit.php" method="post"><input id="brNickName" name="brNickName" type="text" value=""></form>	
+  <form id="formSkibidi" action="https://paper-io.com/skibidi/submit.php" method="post"><input id="skibidiNickName" name="skibidiNickName" type="text" value=""></form>	 -->
   </body>
 </html>

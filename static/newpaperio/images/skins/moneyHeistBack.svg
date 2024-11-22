@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Слой_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 542.46622 661.50806"
+   xml:space="preserve"
+   sodipodi:docname="moneyHeistBack.svg"
+   width="542.46625"
+   height="661.50806"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"><metadata
+   id="metadata244"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs242" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1001"
+   id="namedview240"
+   showgrid="false"
+   inkscape:zoom="1.2547241"
+   inkscape:cx="271.23315"
+   inkscape:cy="330.75803"
+   inkscape:window-x="-9"
+   inkscape:window-y="-9"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Слой_1" />
+<style
+   type="text/css"
+   id="style233">
+	.st0{fill:#38090C;}
+</style>
+<g
+   id="Слой_2_1_"
+   transform="translate(0.03313827,0.00802727)">
+	<g
+   id="Слой_5">
+		<path
+   class="st0"
+   d="m 533,384.5 c -23,-62 -66,-178 -66,-178 C 413.3,-0.2 292.4,-1.3 271.2,0.2 250,-1.3 129.1,-0.2 75.4,206.5 c 0,0 -43,116 -66,178 0,0 -30,89 17,136 0,0 75,76 109,95 0,0 37,39.6 112.6,45.3 v 0.7 h 46.4 v -0.7 C 370,655.1 407,615.5 407,615.5 c 34,-19 109,-95 109,-95 47,-47 17,-136 17,-136 z"
+   id="path235" />
+	</g>
+</g>
+</svg>
