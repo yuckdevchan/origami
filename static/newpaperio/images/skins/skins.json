@@ -1,0 +1,1277 @@
+[
+    {
+        "name": "greenGoblin",
+        "colors": {
+            "main": "#264a2c",
+            "back": "#000A03",
+            "nick": "#afff15",
+            "plate": "#afff15",
+            "particles": ["#52895a", "#567c01", "#afff15", "#08300d"]
+        },
+        "pattern": {
+            "url": "patternGoblin.svg",
+            "scale": 1
+        },
+        "avatar": {
+            "scale": 1.4,
+            "y": 0,
+            "x": 0,
+            "layers": [
+                { "level": 0, "url": "unitGoblinBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "unitGoblin.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "matrix",
+        "colors": {
+            "main": "#032610",
+            "back": "#000A03",
+            "nick": "#48EF54",
+            "plate": "#48EF54",
+            "particles": ["#045409", "#2A7F30", "#063F0A", "#008C0A"]
+        },
+        "pattern": {
+            "url": "matrixPattern.svg",
+            "scale": 1.5
+        },
+        "avatar": {
+            "scale": 1.4,
+            "y": 0,
+            "x": 0,
+            "layers": [
+                { "level": 0, "url": "matrixHeadBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "matrixHead.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "squidGame",
+        "colors": {
+            "main": "#FF1973",
+            "back": "#140144",
+            "nick": "#f1ebff",
+            "plate": "#f1ebff",
+            "particles": ["#B71658", "#DD528B", "#911045", "#FCD0E1"]
+        },
+        "pattern": {
+            "url": "squidPattern.svg",
+            "scale": 1.5
+        },
+        "avatar": {
+            "scale": 1.4,
+            "y": 0,
+            "x": 0,
+            "layers": [
+                { "level": 0, "url": "squidUnitBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "squidUnit.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "venom",
+        "colors": {
+            "main": "#30008e",
+            "back": "#140144",
+            "nick": "#f1ebff",
+            "plate": "#f1ebff",
+            "particles": ["#ae94ed", "#7e59d8", "#5c4691", "#1a0059"]
+        },
+        "pattern": {
+            "url": "patternVenom.svg",
+            "scale": 1.0
+        },
+        "avatar": {
+            "scale": 2.3,
+            "y": 0,
+            "x": 0.3,
+            "layers": [
+                { "level": 0, "url": "venomSkinBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "venomSkin.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "doge",
+        "colors": {
+            "main": "#e8d78b",
+            "back": "#87700e",
+            "nick": "#843e0f",
+            "plate": "#67bff0",
+            "particles": ["#ccb75e", "#ff8a8a", "#5cd67f", "#ffff69", "#67bff0"]
+        },
+        "pattern": {
+            "url": "patternDoge.svg",
+            "scale": 1.0
+        },
+        "avatar": {
+            "scale": 2,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "dogeSkinBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "dogeSkin.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "moneyHeist",
+        "colors": {
+            "main": "#820617",
+            "back": "#000000",
+            "nick": "#ff3b3b",
+            "plate": "#FFFFFF",
+            "particles": ["#560000", "#ffb3b3", "#FFFFFF", "#660000"]
+        },
+        "pattern": {
+            "url": "patternMoneyHeist.svg",
+            "scale": 1.1
+        },
+        "avatar": {
+            "scale": 1.8,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "moneyHeistBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "moneyHeistSkin.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+    "name": "Grogo",
+    "colors": {
+        "main": "#3a487a",
+        "back": "#37435C",
+        "nick": "#3a487a",
+        "plate": "#8ab56f",
+        "particles": ["#4c64a5", "#819eef", "#FFFFFF", "#D4FCFF"]
+    },
+    "pattern": {
+        "url": "yodaPattern.svg",
+        "scale": 1.0
+    },
+    "avatar": {
+        "scale": 2.3,
+        "y": 0,
+        "layers": [
+            { "level": 0, "url": "babyYodaBack.svg" },
+            {
+                "level": 1.1,
+                "scale": 1.0,
+                "url": "babyYodaFace.svg"
+            }
+           
+        ]
+    }
+},
+    {
+    "name": "ChessQueen",
+    "colors": {
+        "main": "#f9ecd1",
+        "back": "#211613",
+        "nick": "#211613",
+        "plate": "#211613",
+        "particles": ["#e0bfa2", "#211613", "#f9ecd1", "#bcaa99"]
+    },
+    "pattern": { "url": "chessPattern.svg", "scale": 1 },
+    "avatar": {
+        "scale": 2.2,
+        "y": 0,
+        "layers": [
+            { "level": 0, "url": "chessQueenShadow.svg" },
+            { "level": 1, "url": "chessQueen.svg"}
+           
+        ]
+    }
+},  
+{
+    "name": "cyber",
+    "colors": {
+        "main": "#f6f101",
+        "back": "#48ddff",
+        "nick": "#48ddff",
+        "plate": "#48ddff",
+        "particles": ["#2bc7e0", "#d3ca24", "#fffaa4", "#aef4ff"]
+    },
+    "pattern": { "url": "cyberPattern.svg", "scale": 1 },
+    "avatar": {
+        "scale": 2,
+        "layers": [
+            { "level": 0, "url": "shadowCyber.svg" },
+            { "level": 1, "url": "cyberHead.svg"}
+        
+        ]
+    }
+},  
+{
+"name": "impostor",
+"colors": {
+    "main": "#4f5a5e",
+    "back": "#373b3c",
+    "nick": "#bf1702",
+    "plate": "#2c3235",
+    "particles": ["#58696d", "#827556", "#302919"]
+},
+"pattern": { "url": "patternCrew.svg", "scale": 0.7 },
+"avatar": {
+    "scale": 1.5,
+    "y": 0,
+    "layers": [
+        { "level": 0, "url": "crewShadow.svg" },
+        { "level": 1, "url": "crew.svg"}
+       
+    ]
+}
+},  
+    {
+        "name": "maskFace",
+        "colors": {
+            "main": "#F2DF74",
+            "back": "#37435C",
+            "nick": "#37435C",
+            "plate": "#37435C",
+            "particles": ["#DBC65D", "#FFF9D9", "#FFFFFF", "#D4FCFF"]
+        },
+        "pattern": {
+            "url": "maskSkinPattern.svg",
+            "scale": 1.0
+        },
+        "avatar": {
+            "scale": 1.6,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "maskSkinBack.svg" },
+                {
+                    "level": 1.1,
+                    "scale": 1.0,
+                    "url": "maskSkin.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "sanitizer",
+        "colors": {
+            "main": "#74C8E3",
+            "back": "#4499AD",
+            "nick": "#26635E",
+            "plate": "#26635E",
+            "particles": ["#9AEFE8", "#4499AD", "#80FFF6", "#E1FFFD"]
+        },
+        "pattern": {
+            "url": "cleanPattern.svg",
+            "scale": 1.0
+        },
+        "avatar": {
+            "scale": 2.6,
+            "y": 0.3,
+            "layers": [
+                { "level": 0, "url": "handBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "handFront.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "covid",
+        "colors": {
+            "main": "#2ECEA0",
+            "back": "#116B4D",
+            "nick": "#2ECEA0",
+            "plate": "#116B4D",
+            "particles": ["#116B4D", "#3DF29D", "#00B588", "#2ECEA0"]
+        },
+        "pattern": {
+            "url": "covidPattern.svg",
+            "scale": 1.1
+        },
+        "avatar": {
+            "scale": 2.2,
+            "y": -0.1,
+            "layers": [
+                { "level": 0, "url": "covidBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "covid.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "doctor",
+        "colors": {
+            "main": "#61D159",
+            "back": "#45A53D",
+            "nick": "#F81A14",
+            "plate": "#BC3F3F",
+            "particles": ["#42AD3A", "#D81212", "#F9E1E1", "#82E57A"]
+        },
+        "pattern": {
+            "url": "doctorPattern.svg",
+            "scale": 0.9
+        },
+        "avatar": {
+            "scale": 2.3,
+            "y": 0.4,
+            "layers": [
+                { "level": 0, "url": "doctorBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "doctorFront.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "gerald",
+        "colors": {
+            "main": "#4a6343",
+            "back": "#2d362b",
+            "nick": "#ebd556",
+            "plate": "#d3d3d3",
+            "particles": ["#4a6343", "#2d362b", "#d3d3d3", "#a39f9f"]
+        },
+        "pattern": {
+            "url": "patternWitcher.svg",
+            "scale": 0.9
+        },
+        "avatar": {
+            "scale": 1.7,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "witcherHeadBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "witcherHead.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "santa",
+        "colors": {
+            "main": "#830000",
+            "back": "#670404",
+            "nick": "#edad2e",
+            "plate": "#edad2e",
+            "particles": ["#830000", "#ffffff", "#edad2e", "#f56666"]
+        },
+        "pattern": {
+            "url": "bellRedPattern.svg",
+            "scale": 0.6
+        },
+        "avatar": {
+            "scale": 1.7,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "santaRoundBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "santaRound.svg"
+                }
+               
+            ]
+        }
+    },
+    {
+        "name": "rudolf",
+        "colors": {
+            "main": "#830000",
+            "back": "#670404",
+            "nick": "#664024",
+            "plate": "#ffffff",
+            "particles": ["#830000", "#ffffff", "#f00a0a", "#f56666"]
+        },
+        "pattern": {
+            "url": "knitPattern.svg",
+            "scale": 0.6
+        },
+        "avatar": {
+            "scale": 1.5,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "rndeerBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.0,
+                    "url": "rndeerFront.svg"
+                },
+                {
+                    "level": 1.3,
+                    "scale": 1.0,
+                    "url": "rndeerLights.svg",
+                    "transformAnimation":{ "alpha":{"start":0.3, "end":1, "time":0.5}}
+                },
+                {
+                    "level": 1.4,
+                    "scale": 1.0,
+                    "url": "rndeerNose.svg",
+                    "transformAnimation":{ "alpha":{"start":0, "end":1, "time":1}}
+                }
+              
+            ]
+        }
+    },
+    {
+        "name": "eye",
+        "colors": {
+            "main": "#c02900",
+            "back": "#843d3d",
+            "nick": "#066b58",
+            "plate": "#91ddcf",
+            "particles": ["#309c8a", "#ec4b03", "#fbf6ce", "#ec034d"]
+        },
+        "pattern": {
+            "url": "eyePattern.svg",
+            "scale": 0.8
+        },
+        "avatar": {
+            "scale": 1.2,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "eyeShadow.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.05,
+                    "url": "eyeSkin.svg"
+                }
+              
+            ]
+        }
+    },
+    {
+        "name": "Frank",
+        "colors": {
+            "main": "#7f309c",
+            "back": "#311c3a",
+            "nick": "#46125b",
+            "plate": "#a5c61e",
+            "particles": ["#7f309c", "#46125b", "#fbf6ce", "#a5c61e"]
+        },
+        "pattern": {
+            "url": "frankiePattern.svg",
+            "scale": 0.6
+        },
+        "avatar": {
+            "scale": 1.4,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "frankieBack.svg" },
+                {
+                    "level": 1.2,
+                    "scale": 1.05,
+                    "url": "frankieSkin.svg"
+                }
+              
+            ]
+        }
+    },
+    {
+        "name": "joker",
+        "colors": {
+            "main": "#fb9407",
+            "back": "#5b1100",
+            "nick": "#5b1100",
+            "plate": "#962206",
+            "particles": ["#c72e04", "#962206", "#318271", "#fb9407"]
+        },
+        "pattern": {
+            "url": "jokerPattern2.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "scale": 1.5,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "jokerBack.svg" },
+                {
+                    "level": 1,
+                    "url": "jokerFace.svg"
+                }
+                
+            ]
+        }
+    },
+    {
+        "name": "batman",
+        "colors": {
+            "main": "#637782",
+            "back": "#162c35",
+            "nick": "#0b1a21",
+            "plate": "#0b1a21",
+            "particles": ["#7fa5b5", "#21323a", "#010100", "#f9ed2c"]
+        },
+        "pattern": {
+            "url": "batmanPattern.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "scale": 1.5,
+            "y": 0,
+            "layers": [
+                { "level": 0,  "url": "batmanHeadBack.svg" },
+                {
+                    "level": 1,
+                    "url": "batmanHead.svg"
+                }
+                
+            ]
+        }
+    },
+    {
+        "name": "reaper",
+        "colors": {
+            "main": "#51504f",
+            "back": "#212020",
+            "nick": "#212020",
+            "plate": "#848484",
+            "particles": ["#282623", "#5b5956", "#7f7a73", "#191818"]
+        },
+        "pattern": {
+            "url": "reaperBack.svg",
+            "scale": 0.8
+        },
+        "avatar": {
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "reaperShadow.svg" },
+                {
+                    "level": 1,
+                    "url": "reaperBody.svg"
+                },
+                {
+                    "level": 1.5,
+                    "scale": 1.3,
+                    "direction": "target",
+                    "pivot": { "y": 0.6, "x":0.7 },
+                    "url": "reaperHand.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "itClown",
+        "colors": {
+            "main": "#ad0400",
+            "back": "#260b0a",
+            "nick": "#ff0400",
+            "plate": "#260b0a",
+            "particles": ["#96182a", "#1e0a09", "#5b111c", "#ad0400"]
+        },
+        "pattern": {
+            "url": "clownBaloonsPattern.svg",
+            "scale": 0.3
+        },
+        "avatar": {
+            "y": -0.2,
+            "layers": [
+                
+                { "level": 0, "url": "clownHeadBack.svg","scale": 2.1 },
+                { "level": 1, "url": "clownHead_back.svg","scale": 2.1 },
+                {
+                    "level": 1.1,
+                    "scale": 2.1,
+                    "direction": "target",
+                    "pivot": { "y": 0.5, "x":0.5 },
+                    "url": "clownHead_eyes.svg"
+                },
+                {
+                    "level": 1.2,"scale": 2.1,
+                    "url": "clownHead_forehead.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "tank",
+        "colors": {
+            "main": "#7f782d",
+            "back": "#5b4c20",
+            "nick": "#5b4c20",
+            "plate": "#5b4c20",
+            "particles": ["#7f7c2d", "#c7be4f", "#ada63c", "#d0cd9a"]
+        },
+        "pattern": {
+            "url": "tankPattern.svg",
+            "scale": 0.3
+        },
+        "avatar": {
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "tankBottom.svg" },
+                {
+                    "level": 1,
+                    "url": "tankDown.svg"
+                },
+                {
+                    "level": 1.5,
+                    "scale": 0.5,
+                    "direction": "target",
+                    "pivot": { "y": 0.8 },
+                    "url": "tank-top.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "thanos",
+        "colors": {
+            "main": "#371768",
+            "back": "#0e0219",
+            "nick": "#cc9900",
+            "plate": "#cc9900",
+            "particles": ["#371768", "#c5abef", "#0e0219", "#261457"]
+        },
+        "pattern": {
+            "url": "spacePattern.svg",
+            "scale": 0.6
+        },
+        "avatar": {
+            "y": -0.2,
+            "scale": 1.3,
+            "layers": [
+                { "level": 0, "url": "thanosHandDown.svg" },
+                {
+                    "level": 1.1,
+                    "url": "thanos.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "capAmerica",
+        "colors": {
+            "main": "#30568e",
+            "back": "#fe0009",
+            "nick": "#fe0009",
+            "plate": "#ffffff",
+            "particles": ["#30568e", "#ffffff", "#346db2", "#083060"]
+        },
+        "pattern": {
+            "url": "starsBack.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "scale": 1.8,
+
+            "layers": [
+                { "level": 0, "url": "capAmericaDown.svg" },
+                {
+                    "level": 1.1,
+                    "url": "capAmerica1.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "cupid",
+        "colors": {
+            "main": "#eb4344",
+            "back": "#8F2421",
+            "nick": "#8F2421",
+            "plate": "#8F2421",
+            "particles": ["#eb4344", "#c5302e", "#8F2421", "#F17A7A"]
+        },
+        "pattern": {
+            "url": "cupidPattern.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "cupidDown.svg" },
+                {
+                    "level": 1,
+                    "scale": 1,
+                    "direction": "target",
+                    "pivot": { "y": 0.9, "x": 0.1 },
+                    "x": 0.1,
+                    "y": -0.1,
+                    "url": "cupidHandMiddle.svg"
+                },
+                {
+                    "level": 1.5,
+                    "scale": 1.5,
+                    "y": 0.4,
+                    "url": "cupidTop.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "christmas",
+        "colors": {
+            "main": "#029261",
+            "back": "#00663b",
+            "nick": "#00663b",
+            "plate": "#00663b",
+            "particles": ["#02AC71", "#58A404", "#00663b", "#003C22"]
+        },
+        "pattern": {
+            "url": "xmasPattern.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "y": -0.1,
+            "x": 0,
+            "layers": [
+                {
+                    "level": 0,
+                    "url": "xmasTreeShadow.svg",
+                    "direction": "billboard",
+                    "scale": 1
+                },
+                {
+                    "level": 1,
+                    "url": "xmasTree.svg",
+                    "direction": "billboard",
+                    "scale": 1
+                }
+            ]
+        }
+    },
+    {
+        "name": "snowman",
+        "rotation": 90,
+        "colors": {
+            "main": "#66FFFB",
+            "back": "#70c6bd",
+            "nick": "#70c6bd",
+            "plate": "#70c6bd",
+            "particles": ["#b7fffe", "#70c6bd", "#fffaff"]
+        },
+        "pattern": {
+            "url": "icePattern.svg",
+            "scale": 0.5
+        },
+        "avatar": {
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "snowmanLowBody.svg", "scale": 1.4 },
+                {
+                    "level": 1.1,
+                    "scale": 1.9,
+                    "direction": "target",
+                    "pivot": { "y": 0.5, "x": 0.5 },
+                    "url": "snowmanHands.svg"
+                },
+                {
+                    "level": 1.2,
+                    "scale": 1.2,
+                    "direction": "target",
+                    "pivot": { "y": 0.4 },
+                    "url": "snowManScarf.svg"
+                },
+                {
+                    "level": 1.5,
+                    "y": -0.3,
+                    "url": "snowmanHead.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "orange",
+        "colors": {
+            "main": "#ff9d1b",
+            "back": "#E1460B",
+            "nick": "#E1460B",
+            "plate": "#E1460B",
+            "particles": ["#FFB959", "#FFD782", "#f3773b"]
+        },
+        "pattern": null,
+        "avatar": {
+            "layers": [
+                {
+                    "level": 0,
+                    "url": "orangeDown.svg",
+                    "scale": 1.5
+                },
+                { "level": 1, "url": "orangeBase.svg", "scale": 1.5 },
+                {
+                    "level": 1.1,
+                    "direction": "target",
+                    "url": "orangeLeaf2.svg",
+                    "scale": 0.7,
+                    "x": 0.05,
+                    "pivot": { "x": 1, "y": 0.8 }
+                },
+                {
+                    "level": 1.2,
+                    "x": 0.1,
+                    "y": 0.1,
+                    "direction": "target",
+                    "url": "orangeLeafTop.svg",
+                    "scale": 0.7,
+                    "pivot": { "x": 0.9, "y": 0.95 }
+                }
+            ]
+        }
+    },
+    {
+        "name": "burger",
+        "colors": {
+            "main": "#ffc770",
+            "back": "#824B24",
+            "nick": "#824B24",
+            "plate": "#824B24",
+            "particles": ["#ffc770", "#824B24", "#ff9466", "#fefe20"]
+        },
+        "pattern": {
+            "url": "burgerPattern.svg",
+            "scale": 0.35
+        },
+        "avatar": {
+            "layers": [
+                {
+                    "level": 0,
+                    "url": "burger-down.svg"
+                },
+                {
+                    "level": 1,
+                    "y": -0.1,
+                    "scale": 1.8,
+                    "url": "burger-up.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "present",
+        "colors": {
+            "main": "#ff6d5b",
+            "back": "#d33740",
+            "nick": "#d33740",
+            "plate": "#d33740",
+            "particles": ["#FF9184", "#d33740", "#FF5C4A"]
+        },
+        "pattern": null,
+        "avatar": {
+            "layers": [
+                {
+                    "level": 0,
+                    "url": "presentDown.svg"
+                },
+                {
+                    "level": 1,
+                    "url": "presentUp.svg"
+                },
+                {
+                    "level": 1.2,
+                    "x": 0.2,
+                    "url": "present-top.svg"
+                }
+            ]
+        }
+    },
+    {
+        "name": "rainbow",
+        "colors": {
+            "main": "#D7B8F8",
+            "back": "#7516AD",
+            "nick": "#7516AD",
+            "plate": "#7516AD",
+            "particles": [
+                "#D7B8F8",
+                "#07f3f6",
+                "#f92f30",
+                "#ffee4d",
+                "#495fbe",
+                "#50c306"
+            ]
+        },
+        "pattern": { "url": "rainbowPattern.svg", "scale": 0.6 },
+        "avatar": {
+            "scale": 1.3,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "rainbowHeartDown.svg" ,
+                    "transformAnimation":{"scaleX":{"start":1, "end":0.8, "time":1},"scaleY":{"start":1, "end":0.8, "time":1}}},
+                { "level": 1, "url": "rainbowHeartUp.svg" ,
+                    "transformAnimation":{"scaleX":{"start":1, "end":0.8, "time":1},"scaleY":{"start":1, "end":0.8, "time":1}
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "name": "spiderman",
+        "colors": {
+            "main": "#ff3f21",
+            "back": "#000000",
+            "particles": ["#141414", "#ff3f21", "#FF7D6A", "#B91700"]
+        },
+        "pattern": { "url": "spiderPattern2.svg", "scale": 0.4 },
+        "avatar": {
+            "scale": 1.3,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "spidermanDown.svg" },
+                { "level": 1, "url": "spidermanUp.svg" }
+            ]
+        }
+    },
+    {
+        "name": "nyan",
+        "colors": {
+            "main": "#ffa3ff",
+            "back": "#ff3095",
+            "nick": "#ff3095",
+            "plate": "#ff3095",
+            "particles": ["#0bd795", "#556cd1", "#ca1dd4", "#ed4c4d", "#ffe453"]
+        },
+        "pattern": { "url": "nyanPattern.svg", "scale": 0.6 },
+        "avatar": {
+            "scale": 1.3,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "nyanShadow.svg", "transformAnimation":{"scaleY":{"start":0.8, "end":1, "time":1}} },
+                { "level": 1, "url": "nyaaa1.svg" , "transformAnimation":{"scaleY":{"start":0.8, "end":1, "time":1}}}
+               
+            ]
+        }
+    },
+    {
+        "name": "pizza",
+        "colors": {
+            "main": "#fdcc49",
+            "back": "#ec7700",
+            "nick": "#ec7700",
+            "plate": "#ec7700",
+            "particles": ["#fdcc49", "#ec7700", "#bf1226"]
+        },
+        "pattern": { "url": "pizzaPattern.svg", "scale": 0.35 },
+        "avatar": {
+            "scale": 1.6,
+            "y": 0.2,
+            "layers": [
+                { "level": 0, "url": "pizzaDown.svg", "rotation": 0 },
+                { "level": 1, "url": "pizzaUp.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "minion",
+        "colors": {
+            "main": "#f6ee44",
+            "back": "#3e3b29",
+            "nick": "#3e3b29",
+            "plate": "#3e3b29",
+            "particles": ["#f6ee44", "#E1D70B", "#3e3b29"]
+        },
+        "pattern": { "url": "minionPattern.svg", "scale": 0.5 },
+        "avatar": {
+            "scale": 1.3,
+            "y": 0.2,
+            "layers": [
+                { "level": 0, "url": "minionDown.svg", "rotation": 0 },
+                { "level": 1, "url": "minionUp.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "teletubby",
+        "colors": {
+            "main": "#8dc63f",
+            "back": "#336f1c",
+            "nick": "#124E05",
+            "plate": "#124E05",
+            "particles": ["#8dc63f", "#336f1c", "#9DDF84"]
+        },
+        "pattern": { "url": "teletubbyPattern0.svg", "scale": 0.5 },
+        "avatar": {
+            "scale": 1.3,
+            "y": -0,
+            "layers": [
+                { "level": 0, "url": "teletubbyDown.svg", "rotation": 0 },
+                {
+                    "level": 1,
+                    "url": "teletubbyUp.svg",
+                    "rotation": 0,
+                    "scale": 1.4,
+                    "pivot": { "y": 0.7 },
+                    "y": 0.1
+                }
+            ]
+        }
+    },
+    {
+        "name": "unic",
+        "colors": {
+            "main": "#fe81f7",
+            "back": "#db33d2",
+            "nick": "#db33d2",
+            "plate": "#db33d2",
+            "particles": ["#FEA5FA", "#db33d2", "#ffff00"]
+        },
+        "pattern": { "url": "unicPattern.svg", "scale": 0.35 },
+        "avatar": {
+            "scale": 1.7,
+            "y": 0.2,
+            "layers": [
+                { "level": 0, "url": "unicornDown.svg", "rotation": 0 },
+                { "level": 1, "url": "unicornUp.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "freddy",
+        "colors": {
+            "main": "#b68631",
+            "back": "#232323",
+            "nick": "#F7A324",
+            "plate": "#F7A324",
+            "particles": ["#232323", "#b68631", "#B99D00", "#F2CE00"]
+        },
+        "pattern": { "url": "freddyPattern.svg", "scale": 0.25 },
+        "avatar": {
+            "scale": 1.7,
+            "y": 0.0,
+            "layers": [
+                { "level": 0, "url": "freddyNDown.svg", "rotation": 0 },
+                { "level": 1, "url": "freddyN.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "heart",
+        "colors": {
+            "main": "#f49495",
+            "back": "#d15352",
+            "nick": "#942727",
+            "plate": "#942727",
+            "particles": ["#f49495", "#d15352", "#f06f73", "#f39595"]
+        },
+        "pattern": { "url": "heartPattern.svg", "scale": 0.4 },
+        "avatar": {
+            "scale": 1.3,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "heart-down.svg" ,
+                    "transformAnimation":{"scaleX":{"start":1, "end":0.8, "time":1},"scaleY":{"start":1, "end":0.8, "time":1}
+                    }},
+                { "level": 1, "url": "heart-up.svg" ,
+                    "transformAnimation":{"scaleX":{"start":1, "end":0.8, "time":1},"scaleY":{"start":1, "end":0.8, "time":1}
+                    }}
+            ]
+        }
+    },
+    {
+        "name": "sushi",
+        "colors": {
+            "main": "#34514d",
+            "back": "#263a38",
+            "nick": "#101817",
+            "plate": "#101817",
+            "particles": ["#34514d", "#263a38", "#6A9D98"]
+        },
+        "pattern": { "url": "sushiPattern1.svg", "scale": 0.6 },
+        "avatar": {
+            "scale": 1,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "sushiDown.svg", "rotation": 0 },
+                { "level": 1, "url": "sushiUp.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "ghost",
+        "colors": {
+            "main": "#141B1B",
+            "back": "#fe1230",
+            "nick": "#fe1230",
+            "plate": "#fe1230",
+            "particles": ["#141B1B", "#2F4040", "#C2D6D8 ", "#E7EEEF "]
+        },
+        "pattern": { "url": "ghostPattern.svg", "scale": 0.2 },
+        "avatar": {
+            "scale": 1,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "ghostShadow.svg", "rotation": 0 },
+                { "level": 1, "url": "ghostEyesWhite.svg", "rotation": 0 },
+                {
+                    "level": 1.1,
+                    "url": "ghostEyes.svg",
+                    "rotation": 0,
+                    "scale": 0.5,
+                    "direction": "target"
+                },
+                { "level": 1.2, "url": "ghostBody.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "duck",
+        "colors": {
+            "main": "#33cdcf",
+            "back": "#218C8F",
+            "nick": "#218C8F",
+            "plate": "#218C8F",
+            "particles": ["#53D3D7", "#99E6E8", "#C7F0F1", "#218C8F"]
+        },
+        "pattern": { "url": "duckPattern.svg", "scale": 0.3 },
+        "avatar": {
+            "scale": 1,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "duckDown.svg", "rotation": 0 },
+                {
+                    "level": 1,
+                    "url": "duckUp.svg",
+                    "rotation": 0,
+                    "pivot": { "x": 0.5, "y": 0.6 },
+                    "y": -0.05
+                }
+            ]
+        }
+    },
+    {
+        "name": "cash",
+        "colors": {
+            "main": "#45e07a",
+            "back": "#1B4B2E",
+            "nick": "#1B4B2E",
+            "plate": "#1B4B2E",
+            "particles": ["#45e07a", "#92EDB1", "#1B4B2E"]
+        },
+        "pattern": { "url": "cashPattern.svg", "scale": 0.8 },
+        "avatar": {
+            "scale": 1.4,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "cashDown.svg", "rotation": 0 },
+                { "level": 1, "url": "cashUp.svg", "rotation": 0, "y": 0.1 }
+            ]
+        }
+    },
+    {
+        "name": "ladybug",
+        "colors": {
+            "main": "#ff5949",
+            "back": "#000000",
+            "nick": "#000000",
+            "plate": "#000000",
+            "particles": ["#FF321C", "#550900", "#FF9184", "#FC7756"]
+        },
+        "avatar": {
+            "scale": 1.2,
+            "y": 0,
+            "layers": [
+                { "level": 0, "url": "ladyBugDown.svg", "rotation": 0 },
+                { "level": 1, "url": "ladyBugUP.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "waterm",
+        "colors": {
+            "main": "#ee4445",
+            "back": "#1f831f",
+            "nick": "#000000",
+            "plate": "#000000",
+            "particles": ["#e52135", "#F1858F", "#FAD3D8", "#B9EEB9"]
+        },
+        "pattern": { "url": "watermelPattern.svg", "scale": 0.3 },
+        "avatar": {
+            "scale": 1.6,
+            "y": -0.2,
+            "layers": [
+                { "level": 0, "url": "watermelShadow.svg", "rotation": 0 },
+                { "level": 1, "url": "watermel.svg", "rotation": 0 }
+            ]
+        }
+    },
+    {
+        "name": "cake",
+        "colors": {
+            "main": "#ffd8d9",
+            "back": "#feef94",
+            "nick": "#894737",
+            "plate": "#894737",
+            "particles": ["#ffd8d9", "#FFB9BB", "#feef94", "#894737"]
+        },
+        "pattern": {
+            "url": "cakePattern.svg",
+            "scale": 0.4
+        },
+        "avatar": {
+            "scale": 1,
+            "layers": [
+                {
+                    "level": 0,
+                    "url": "cakeDown.svg"
+                },
+                {
+                    "level": 0.5,
+                    "url": "cakeMiddle.svg",
+                    "direction": "target"
+                },
+                { "level": 1.1, "url": "cakeTop.svg" }
+            ]
+        }
+    },
+    {
+        "name": "bat",
+        "colors": {
+            "main": "#43423F",
+            "back": "#302C2D",
+            "nick": "#121011",
+            "plate": "#121011",
+            "particles": ["#1D1C1B", "#352F31", "#4E4349", "#615050"]
+        },
+        "pattern": null,
+        "avatar": {
+            "y": -0.4,
+            "layers": [
+                { "level": 0, "url": "batDownN.svg", "y": 0.4 },
+                {
+                    "level": 1,
+                    "scale": 3.5,
+                    "url": "batUpN.svg"
+                }
+            ]
+        }
+    }
+]
