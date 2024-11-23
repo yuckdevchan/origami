@@ -1,0 +1,85 @@
+
+{
+    "orange": {
+      "checker": "Link",
+      "link": "https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fpaper-io.com%2F&ref_src=twsrc%5Etfw&text=Capture%20new%20territories%20and%20become%20the%20king%20of%20the%20server!&tw_p=tweetbutton&url=https%3A%2F%2Fpaper-io.com%2F",
+      "descriptionIcon": "tweetBtn.png"
+    },
+    "burger": {
+      "checker": "Link",
+      "link": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpaper-io.com%2F&display=popup&ref=plugin&src=like&kid_directed_site=0",
+      "descriptionIcon": "fbShopBtn.png"
+    },
+    "present": {
+      "checker": ["DaysInARow", 3],
+      "cumulative": true,
+      "description": "Play 3 days in a row"
+    },
+    "tank": {
+      "mode": "soloClassic",
+      "checker": ["Kills", 1],
+      "description": "Kill someone"
+    },
+    "itClown": {
+      "mode": "soloClassic",
+      "checker": ["Kills", 5],
+      "cumulative": true,
+      "description": "5 kills total"
+    },
+    "reaper": {
+      "mode": "soloClassic",
+      "checker": ["Kills", 50],
+      "cumulative": true,
+      "description": "50 kills total",
+      "icon": "reaper60.png"
+    },
+    "freddy": { "mode": "soloClassic", "checker": ["Cover", 0.01], "description": "Cover 1%" },
+    "capAmerica": {
+      "mode": "soloClassic",
+      "checker": ["Cover", 0.5],
+      "description": "Cover 50%",
+      "icon": "capAmerica.png"
+    },
+    "chessQueen": {
+      "mode": "soloClassic",
+      "checker": ["Cover", 0.8],
+      "description": "Cover at least 80% of the map",
+      "icon": "chessQueen.png"
+    },
+    "gerald": {
+      "mode": "soloClassic",
+      "checker": ["CoverWithoutKill", 0.25],
+      "description": "Cover 25% with 0 kills",
+      "icon": "witcherHead60.png"
+    },
+    "grogo": {
+      "mode": "soloClassic",
+      "checker": ["CoverWithoutKill", 0.5],
+      "description": "Cover 50% with 0 kills",
+      "icon": "grogo.png"
+    },
+    "sanitizer": {
+      "mode": "soloClassic",
+      "checker": ["Sanitizer", 1000],
+      "description": "Stay 30 seconds inside your area",
+      "icon": "sanitizer60.png"
+    },
+    "doctor": {
+      "mode": "soloClassic",
+      "checker": ["KillSkin", "covid"],
+      "description": "Kill COVID-19",
+      "icon": "doctor60.png"
+    },
+    "covid": {
+      "mode": "soloClassic",
+      "checker": ["KillRow", 3],
+      "description": "Kill 3 players without returning to the base",
+      "icon": "covid60.png"
+    },
+    "cyber": {
+      "mode": "soloClassic",
+      "checker": ["Cover", 0.2077],
+      "cumulative": true,
+      "description": "Cover a total of 20.77%"
+    }
+  }

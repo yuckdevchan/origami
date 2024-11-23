@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Paper.io play online</title>
+    <title>Origami</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="paper.io"/>
@@ -124,7 +124,30 @@
 </script>
 </div>
     <div id="left"></div>
-    <div id="right"></div>
+    <div id="right">
+      <div id="partymode">
+        <h3>PARTY MODE</h3>
+        <p>Play with your friends in the same arena</p>
+        <input id="newparty_ch" type="button" style="font-family: 'Changa', sans-serif; font-size: 28px;" onclick="document.location.href='/ps/?newparty'" value="Create a party">
+      </div>
+      <div id="chall">
+        <input type="button" style="font-family: 'Changa', sans-serif; font-size: 28px;" onclick="if ($('#paperio_p1').val()) Cookies.set('paperio_username', $('#paperio_p1').val(), { expires: 30 }); document.location.href='/challenges'" value="Challenges">
+      </div>
+      <div id="rightbanner">
+        <div id="gameadsbanner"></div>
+        <script type="text/javascript">
+          (function(g,a,m,e,A,d,s){g[A]=g[A]||function(){(g[A].s=g[A].s||[]).push(arguments)};
+          g[A].l=1*new Date();d=a.createElement("script"),s=a.getElementsByTagName("script")[0],d.async=1,d.src=e+"?objid="+m+"&jsdate="+(+new Date())+"&lang="+g.navigator.language+"&rfunc="+A+"&fromhost="+g.location.hostname+"&refr="+encodeURIComponent(a.referrer)+"&fromurl="+encodeURIComponent(g.location.href)+"",s.parentNode.insertBefore(d,s)})
+          (window, document, "gameadsbanner", "https://n.gameads.io/getcode", "GameAdsRenew");
+        </script>
+      </div>
+      <script type="text/javascript">
+        function UpdateRightBanner()
+        {
+          GameAdsRenew("gameadsbanner");
+        }
+      </script>
+    </div>
     <div id="bottom"><div class="a"></div></div>
     <div id="darktheme"><div class="b"><div id="theme">
 <div class="button dark" id="darkBtn" onclick="changeTheme();">DARK THEME</div>

@@ -1,0 +1,42 @@
+
+{
+    "solo": {
+          "soloClassic": {"prefix": "solo"},
+          "soloNoBots": {"prefix": "solonb", "botsCount": 0 },
+          "soloSmallNoBots": {"arenaSize": 1000, "botsCount": 0, "prefix": "solos"},
+          "soloFastspeed": {"unitSpeed": 135, "prefix": "solofast"},
+          "soloSmall": {"arenaSize": 1000, "botAttackTrackLength": 750, "prefix": "solos"},
+          "soloTimidBots": {"botAttackTrackLength": 150, "prefix": "soloeasy"},
+          "soloOnePercent": {"botsScount": 0, "winPercent": 0.01, "prefix": "solo1p"}
+    },
+    "pvp": {
+          "pvpNoBots": {
+                "botsCount": 0,
+                "prepareCounter": 0,
+                "botAggro": 0,
+                "arenaSize": 1000,
+                "prefix": "s",
+                "autoselect": "newserv"
+          },
+          "pvpWithBots": {
+                "warmupTics": 1000,
+                "botsCount": 8,
+                "prepareCounter": 0,
+                "botsSpawnImmediately": 8,
+                "initialBotMinBaseSize": 100,
+                "initialBotMaxBaseSize": 500,
+                "arenaSize": 2000,
+                "prefix": "p",
+                "autoselect": "newparty"
+          },
+          "pvpMegaField": {
+                "botsCount": 0,
+                "prepareCounter": 0,
+                "botAggro": 0,
+                "arenaSize": 3000,
+                "prefix": "m"
+          },
+          "pvpSmall": {"arenaSize": 1000, "botAttackTrackLength": 750, "prepareCounter": 1000},
+          "ffa": {"freeForAll":true, "prefix":"f"}
+    }
+}

@@ -1765,6 +1765,7 @@ width: 30px;   border-bottom:6px solid #026a40;
     min-height: 224px;
 	max-height: 224px;
     border-bottom: solid 3px #a1a08f;
+    background-color: rgb(222, 222, 197);
 }
 .items_area ul.mode-items {
     width: 100%;

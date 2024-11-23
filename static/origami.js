@@ -1,6 +1,5 @@
 
 console.log("Origami Client-side Modifications Injected!");
-document.title = "Origami Server";
 
 var link = document.querySelector("link[rel~='icon']");
 if (!link) {
@@ -9,6 +8,8 @@ if (!link) {
     document.head.appendChild(link);
 }
 link.href = 'favicon.ico';
+
+// below script is injected because it isn't evaluated otherwise for some reason.
 
 function isDarkOn() {
     var darkOnStr = Cookies.get('darkTheme');

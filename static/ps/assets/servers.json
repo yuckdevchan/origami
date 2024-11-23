@@ -1,0 +1,8 @@
+{
+    "origami"      : { "uri": "http://localhost:5000/ps/server"    , "group": "public" },
+    "test"     : { "uri": "http://localhost:5000/ps/server"   , "group": "hidden" },
+    "monitor"  : { "uri": "http://localhost:5000/ps/server", "group": "hidden" },
+    "localhost": { "uri": "http://localhost:5000/ps/server"         , "group": "hidden" },
+    "master"     : { "uri": "http://localhost:5000/ps/server" },
+    "_master"    : { "uri": "http://localhost:5000/ps/server"       }
+}
