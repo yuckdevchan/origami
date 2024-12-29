@@ -1,0 +1,1 @@
+$('#left').html('');$('#right').html('      <div id=\"normalmode\">\r\n        <a href=\"/\">BACK TO TITLE</a>\r\n      </div>\r\n');$('#bottom .b').html('<div id=\"skins\">\n <div class=\"shop\">\n    <div class=\"button shop\" onclick=\"shop_open(); \">SKINS<!--<div class=\"count-newskins\">3</div>--></div>\n    <div id=\"SkinUnlocked\"></div>\n  </div>\n</div>\n');

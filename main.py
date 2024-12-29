@@ -44,6 +44,10 @@ def server():
 def server_leaderboards():
     return jsonify([[], None, None, [], None, None])
 
+@app.route("/challenges")
+def challenges():
+    return send_from_directory("static", "challenges.html")
+
 @app.route("/<path:path>", methods=["GET", "POST"])
 def static_files(path):
     denylist = ["newpaperio/scripts/unfecth.js"]
@@ -57,4 +61,4 @@ def static_files(path):
         return make_response("Not Found", 404)
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=True, port=5001)

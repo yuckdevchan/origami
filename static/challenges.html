@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Origami Challenges</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="challenges"/>
+    <meta name="description" content="Enjoy introduce a new game mode called Challenges! Do you think you are good enough at Paper.io to complete all of the challenges?"/>
+    <meta property="og:url" content="paper-io.com">
+    <meta property="og:type" content="website">
+	<meta property="og:title" content="Play Paperio with me!">
+    <meta property="og:description" content="New game from the creator of agar.io - PAPER-IO.COM! Hey, play with me!">
+    <meta property="og:image" content="/images/paper-new.png">
+	<link rel="canonical" href="https://paper-io.com/challenges" />
+    <link href="https://fonts.googleapis.com/css?family=Changa:600" rel="stylesheet">
+    <link href="/newpaperio/styles/paperio.css?v=1732390654" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/newpaperio/scripts/jquery.easing.min.js"></script>
+    <script src="/newpaperio/scripts/js.cookie.js"></script>
+    <script src="/newpaperio/scripts/fireworks.js"></script>
+    <script src="/advert.js"></script>
+    <script src="/origami2.js"></script>
+	<!--  <script async src="//api.adinplay.com/libs/aiptag/pub/TPZ/paper-io.com/tag.min.js"></script> -->
+    <link rel="shortcut icon" href="/favicon.ico"> 
+  </head>
+  <body>
+    <div id="paperio"><div id="pre_game">
+  <div style="width: 680px; height: 32px;">
+  </div>
+  <div class="dark"></div>
+  <div class="logo"></div>
+  <div id="challenge_status">
+    <div class="title">CHALLENGES</div>
+    <div class="bar"><div class="inner"></div></div>
+    <div class="progress">0/20</div>
+  </div>
+  <div id="challenges_ads">&nbsp;</div>
+  <div class="challenges_list">
+    <div class="block" id="challenge_block_1" onclick="challenge_detail(1); $('.challenges_detail .desc p').html('Take 15% in this small map');">1</div>
+    <div class="block" id="challenge_block_2" onclick="challenge_detail(2); $('.challenges_detail .desc p').html('Take 15% with low speed');">2</div>
+    <div class="block" id="challenge_block_3" onclick="challenge_detail(3); $('.challenges_detail .desc p').html('Take 15% in high speed mode');">3</div>
+    <div class="block" id="challenge_block_4" onclick="challenge_detail(4); $('.challenges_detail .desc p').html('Kill all other players');">4</div>
+    <div class="block" id="challenge_block_5" onclick="challenge_detail(5); $('.challenges_detail .desc p').html('Kill 10 other players');">5</div>
+    <div class="block" id="challenge_block_6" onclick="challenge_detail(6); $('.challenges_detail .desc p').html('Take 25% with low speed');">6</div>
+    <div class="block" id="challenge_block_7" onclick="challenge_detail(7); $('.challenges_detail .desc p').html('Take 50% with low speed');">7</div>
+    <div class="block" id="challenge_block_8" onclick="challenge_detail(8); $('.challenges_detail .desc p').html('Kill all other players');">8</div>
+    <div class="block" id="challenge_block_9" onclick="challenge_detail(9); $('.challenges_detail .desc p').html('Take 25% in this small map');">9</div>
+    <div class="block" id="challenge_block_10" onclick="challenge_detail(10); $('.challenges_detail .desc p').html('Take 25% in high speed mode');">10</div>
+    <div class="block" id="challenge_block_11" onclick="challenge_detail(11); $('.challenges_detail .desc p').html('Kill 30 other players');">11</div>
+    <div class="block" id="challenge_block_12" onclick="challenge_detail(12); $('.challenges_detail .desc p').html('Take 50% in this small map');">12</div>
+    <div class="block" id="challenge_block_13" onclick="challenge_detail(13); $('.challenges_detail .desc p').html('Kill 75 other players');">13</div>
+    <div class="block" id="challenge_block_14" onclick="challenge_detail(14); $('.challenges_detail .desc p').html('Take 50% in high speed mode');">14</div>
+    <div class="block" id="challenge_block_15" onclick="challenge_detail(15); $('.challenges_detail .desc p').html('Take 75% with low speed');">15</div>
+    <div class="block" id="challenge_block_16" onclick="challenge_detail(16); $('.challenges_detail .desc p').html('Take 100% in this small map');">16</div>
+    <div class="block" id="challenge_block_17" onclick="challenge_detail(17); $('.challenges_detail .desc p').html('Take 75% in high speed mode');">17</div>
+    <div class="block" id="challenge_block_18" onclick="challenge_detail(18); $('.challenges_detail .desc p').html('Take 10% with inverted controls');">18</div>
+    <div class="block" id="challenge_block_19" onclick="challenge_detail(19); $('.challenges_detail .desc p').html('Take 25% with inverted controls');">19</div>
+    <div class="block" id="challenge_block_20" onclick="challenge_detail(20); $('.challenges_detail .desc p').html('Take 50% with inverted controls');">20</div>
+    <div class="block" id="challenge_block_21" onclick="challenge_detail(21); $('.challenges_detail .desc p').html('Take 75% in Christmas mode');">21</div>
+  </div>
+  <div class="challenges_exit"><a href="/">BACK</a></div>
+  <div class="challenges_detail">
+    <div class="box">
+      <div class="x" onclick="$('.challenges_detail').hide();">&times;</div>
+      <div class="title"></div>
+      <div class="desc"><p></p></div>
+      <div class="status"></div>
+      <div class="statusSkin"></div>
+      <div class="button cancel_chal" onclick="$('.challenges_detail').hide();">CANCEL</div>
+      <div class="button play_chal" onclick="challenge_play(0);">PLAY</div>
+    </div>
+  </div>
+</div>
+<div id="the_game"></div>
+<div id="game_over"></div>
+<div id="dynamic_css"></div>
+<script>$('#paperio #paperio_p1').val(Cookies.get('paperio_username'));</script>
+<div id="outstreamOverlay" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(0,0,0,.8); z-index: 1000; display: none"></div>
+<div id="aipstreamContainer" style="min-width: 480px; min-height: 360px; width: 100%; height: 100%; position: absolute; z-index: 1001; display: none"></div>
+<div id="outstreamContainer" style="min-width: 480px; min-height: 360px; width: 100%; height: 100%; position: absolute; z-index: 1001; display: none; background: #000000!important; opacity:1!important;"></div>
+<script>
+	
+  window.challenges = {
+    '1':'Take 15% in this small map', // normal game mode, limited map size, like in the Small Map mode
+    '2':'Take 15% with low speed', // normal game mode, limited speed, like in the Slow Speed mode
+    '3':'Take 15% in high speed mode', // normal game mode, speed increased – like in the Fast Speed mode
+    '4':'Kill all other players', // the game and the bots start with an equal amount of captured territories – 0 for everyone, after killing the bots the new ones don’t spawn, limited map size, like in the Small Map mode
+    '5':'Kill 10 other players', // normal game mode
+    '6':'Take 25% with low speed', // normal game mode, limited speed, like in the Slow Speed mode
+    '7':'Take 50% with low speed', // normal game mode, limited speed, like in the Slow Speed mode
+    '8':'Kill all other players', // the game and the bots start with an equal amount of captured territories – 0 for everyone, after killing the bots new ones don’t spawn, standard map size
+    '9':'Take 25% in this small map', // normal game mode, limited map size, like in the Small Map mode
+    '10':'Take 25% in high speed mode', // normal game mode, speed increased – like in the Fast Speed mode
+    '11':'Kill 30 other players', // normal game mode
+    '12':'Take 50% in this small map', // normal game mode, limited map size, like in the Small Map mode
+    '13':'Kill 75 other players', // normal game mode
+    '14':'Take 50% in high speed mode', // normal game mode, speed increased – like in the Fast Speed mode
+    '15':'Take 75% with low speed', // normal game mode, limited speed, like in the Slow Speed mode
+    '16':'Take 100% in this small map', // normal game mode, limited map size, like in the Small Map mode
+    '17':'Take 75% in high speed mode', // normal game mode, speed increased – like in the Fast Speed mode
+    '18':'Take 10% with inverted controls', // normal game mode, inverted controls, like in the Invert Controls mode
+    '19':'Take 25% with inverted controls', // normal game mode, inverted controls, like in the Invert Controls mode
+    '20':'Take 50% with inverted controls', // normal game mode, inverted controls, like in the Invert Controls mode
+    '21':'Take 75% in Christmas mode', // normal game mode, inverted controls, like in the Invert Controls mode
+  };
+  
+   window.getChelInfo = function(i)
+	{
+		challenge_detail(i); $('.challenges_detail .desc p').html(window.challenges[i]);
+	}
+	
+	
+  
+var game_with_modes = false;
+var game_with_challenges = true;
+var skinFromChal = ['','Christmas',null, null, null, null,
+null, null, null,null,null,
+null,null,null,'Cupid',null,
+null,null,null,null,null,
+"Snowman, Present"];
+window.skinFromChal = skinFromChal;
+function challenge_detail(i) {
+  $('.challenges_detail .title').html('CHALLENGE '+i);
+  $('.challenges_detail .play_chal').attr('onclick','challenge_play('+i+');');
+  
+  if (!paperio_challenges['c'+i]) {
+    $('.challenges_detail .status').html('NOT COMPLETED');
+	
+	if(skinFromChal[i])
+	{
+		$('.challenges_detail .statusSkin').html('REWARD: Skin "'+skinFromChal[i]+'"');
+	}
+	else
+	{
+		$('.challenges_detail .statusSkin').html('');
+	}
+  } else {
+    playtime = +paperio_challenges['c'+i];
+    playtime_m = Math.floor(playtime / 60);
+    if (playtime_m < 10) { playtime_m = '0'+playtime_m; }
+    playtime_s = Math.floor(playtime-playtime_m*60);
+    if (playtime_s < 10) { playtime_s = '0'+playtime_s; }
+  
+    $('.challenges_detail .status').html('BEST TIME: '+playtime_m+':'+playtime_s);
+	if(skinFromChal[i])
+	{
+		$('.challenges_detail .statusSkin').html('REWARD: Skin "'+skinFromChal[i]+'"');
+	}
+	else
+	{
+		$('.challenges_detail .statusSkin').html('');
+	}
+  }
+  $('.challenges_detail').show();
+}
+
+function challenge_play(i) {
+  game_challenge = i;
+  window.xmasOn = false;
+  window.obstaclesOn = false;
+  
+  switch (game_challenge) {
+    case 1: game_speed = 100; grid_width = 60; grid_height = 46; reverse_control = false; break;
+    case 2: game_speed = 50; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 3: game_speed = 200; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 4: game_speed = 100; grid_width = 60; grid_height = 46; reverse_control = false; break;
+    case 5: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 6: game_speed = 50; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 7: game_speed = 50; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 8: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 9: game_speed = 100; grid_width = 60; grid_height = 46; reverse_control = false; break;
+    case 10: game_speed = 200; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 11: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 12: game_speed = 100; grid_width = 60; grid_height = 46; reverse_control = false; break;
+    case 13: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 14: game_speed = 200; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 15: game_speed = 50; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 16: game_speed = 100; grid_width = 60; grid_height = 46; reverse_control = false; break;
+    case 17: game_speed = 200; grid_width = 90; grid_height = 70; reverse_control = false; break;
+    case 18: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = true; break;
+    case 19: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = true; break;
+    case 20: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = true; break;
+    case 21: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; window.xmasOn = true; window.obstaclesOn = true; break;
+    default: game_speed = 100; grid_width = 90; grid_height = 70; reverse_control = false; break;
+  }
+  
+  game_start();
+  Cookies.set('needChal', '', { expires: 30 });
+}
+
+	var getUrlParameter = function getUrlParameter(sParam) {
+		var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+		for (i = 0; i < sURLVariables.length; i++) {
+			sParameterName = sURLVariables[i].split('=');
+
+			if (sParameterName[0] === sParam) {
+				return sParameterName[1] === undefined ? true : sParameterName[1];
+			}
+		}
+	};
+		
+	var needChal = getUrlParameter("needChal");// Cookies.get('needChal');
+	if(needChal&&needChal !== "")
+	{
+		//window.getChelInfo(needChal);
+		setTimeout(window.getChelInfo, 1000, needChal)
+	}
+</script>
+<style>
+#pre_game .challenges_list { position: absolute; top: 285px; left: 50%; margin-left: -456px; width: 545px; color: #fff; bottom: 100px; overflow-y: auto; z-index: 1; }
+#pre_game .challenges_list .block { float: left; width: 120px; height: 120px; margin: 5px; background: #a4decc; color: #000; border-radius: 10px; line-height: 120px; text-align: center; font-size: 40px; cursor: pointer; }
+#pre_game .challenges_list .block.completed { background: #00c37b; color: color: #000; }
+#pre_game .challenges_list .block.disabled { background: #232728; color: rgba(0,0,0,.2); cursor: default; }
+#pre_game .challenges_exit { position: absolute; bottom: 50px; left: 50%; margin-left: -456px; width: 545px; text-align: center; z-index: 5; }
+#pre_game .challenges_exit a { color: #00d095; font-size: 36px; line-height: 42px; margin: 0; padding: 0; }
+#pre_game .challenges_detail { position: absolute; top: 285px; left: 50%; margin-left: -456px; width: 545px; color: #fff; bottom: 100px; z-index: 1; background: rgba(45,49,49,.8); display: none; }
+#pre_game .challenges_detail .box { position: absolute; top: 50%; left: 10px; height: 340px; margin-top: -170px; right: 10px; border-radius: 10px; background: #00a56f; }
+#pre_game .challenges_detail .box .x { position: absolute; top: -5px; right: -5px; font-size: 40px; line-height: 40px; width: 40px; background: #00c37b; border-radius: 10px; color: #000; cursor: pointer; text-align: center; }
+#pre_game .challenges_detail .box .title { position: absolute; top: 10px; left: 50px; right: 50px; font-size: 24px; line-height: 40px; color: #000; text-align: center; }
+#pre_game .challenges_detail .box .desc { position: absolute; top: 60px; left: 20px; height: 134px; width: 445px; padding: 0 20px; background: #00c37b; border-radius: 10px; display: table; }
+#pre_game .challenges_detail .box .desc p { font-size: 20px; line-height: 24px; color: #243132; display: table-cell; vertical-align: middle; text-align: center; }
+#pre_game .challenges_detail .box .status { position: absolute; top: 210px; left: 20px; right: 20px; height: 24px; font-size: 20px; line-height: 24px; color: #b3e2d3; text-align: center; }
+#pre_game .challenges_detail .box .statusSkin { position: absolute; top: 153px; left: 20px; right: 20px; height: 24px; font-size: 20px; line-height: 24px; color: #f5fffc;; text-align: center; }
+#pre_game .challenges_detail .box .button.cancel_chal { left: 20px; bottom: 20px; top: auto; width: 140px; opacity: .5; }
+#pre_game .challenges_detail .box .button.play_chal { right: 20px; bottom: 20px; top: auto; width: 140px; }
+#pre_game .button:active,#contact .button:active { border: none; border-bottom:2px solid #a1a130; border-top: 4px solid #00c37b; }
+#challenges_ads { position: absolute; top: 285px; left: 50%; margin-left: 180px; width: 320px; bottom: 100px; overflow-y: auto; z-index: 1; height: 620px;}
+#skins { display: none; }
+#bottom { top: auto; height: 90px; }
+#bottom .a { position: absolute; top: -290px; left: 50%; margin-left: 110px; width: 345px; color: #fff; }
+#normalmode { display: block; position: absolute; top: 8px; right: 10px; width: 430px; height: 100px; text-align: right; z-index: 100;}
+#normalmode a { color: #00d095; font-size: 36px; line-height: 42px; text-align: right; margin: 0; padding: 0; }
+#outer_grid.has100pct:after { content:'CHALLENGE COMPLETED!'; font-size: 70px; line-height: 70px; }
+#message { display: none; }
+#challenge_status { position: absolute; top: 156px; left: 50%; margin-left: -200px; width: 400px; text-align: center; color: #fafafa; font-size: 30px; line-height: 36px; }
+#challenge_status .title { font-size: 40px; line-height: 60px; }
+#challenge_status .bar { background: rgba(0,0,0,.1); height: 34px; width: 260px; display: inline-block; position: absolute; top: 60px; left: 32px; }
+#challenge_status .bar .inner { background: #35dcac; border-bottom: 6px solid #00a670; position: absolute; top: 0; left: 0; bottom: 0; }
+#challenge_status .progress { display: inline-block; position: absolute; top: 59px; left: 306px; color: #ccc; }
+
+</style>
+</div>
+    <div id="message"><div id="message">
+  <p>Want to play a game?</p>
+  <p>Use arrows or WSAD to control your paper block</p>
+  <p>Don't hit the walls</p>
+  <p>Bite enemy tails but don't let them bite yours!</p>
+  <p>Compete against other players</p> 
+</div>
+<script>
+  var loop_msg = -1;
+  function message_loop() {
+    $('#message p').eq(loop_msg).fadeOut(500);
+    loop_msg++;
+    if (loop_msg >= $('#message p').length) { loop_msg = 0; }
+    $('#message p').eq(loop_msg).delay(250).fadeIn(500);
+  }
+  window.setInterval(message_loop, 3000);
+  message_loop();
+</script>
+</div>
+    <div id="right"></div>
+    <div id="bottom"><div class="a"></div><div class="b"></div></div>
+    <div id="share"><div class="helpinfo"><a id="helpinfoid" href="https://goo.gl/forms/UUdDm1r4sxiNMJ0z2" target="blank">Help us make the game better!</a><br/>
+</div>
+<div class="skinshere">&nbsp;</div>
+<div id="wc"><a href="/skibidi/" target="_blank"><img src="/images/toilet24.png">Try new Skibidi Toilet mode!</a></div></div>
+    <div id="links"><div id="block_links" align="right">
+<a href="/feedback" target="_blank">Contact</a>
+<a href="#about" onclick="about_open(); return false;">About Challenges</a>
+</div></div>
+    <div id="overlay"></div><div id="text"><div class="text">
+  <h1>Challenges Paper.io</h1>
+  <p>Paper.io has been around for a while and millions of players around the world have been enjoying this game for what feels like forever. It simply doesn't get old! But what if you could re-experience the joy of discovering Paper for the first time? Or what if you simply want more of this awesomeness in your life? Well, you are in luck, because we are proud to introduce a new game mode called Challenges!</p>
+  <p>So you might be wondering, what exactly these challenges are? To put it simply, they are exactly what they sound like: there are multiple levels of varying difficulty, each containing a special task the player needs to achieve. The basic gameplay principles remain the same, but now the player will be required to capture a certain percentage of the map or defeat a certain number of opponents to complete the challenge.</p>
+  <p>But that's not all! We've introduced new fun mechanics to spice things up even more. Some of the levels will have certain gimmicks to them, like inverted controls, high speed mode or slow mode.</p>
+  <p>Do you think you are good enough at Paper.io to complete all of the challenges? Time to experience everything this game has to offer and prove that you have what it takes!</p>
+</div>
+<div class="close" onclick="about_close();">&times;</div>
+<script>
+  function about_open() { $('#overlay,#text').fadeIn(); }
+  function about_close() { $('#overlay,#text').fadeOut(); }
+</script>
+</div>
+    <div id="fireworks"></div>
+    <div id="zoom"></div>
+    <script>
+      $(function() { $.ajax({url:'/newpaperio/ajax/rek-chal.php',method:'POST',data:{w:$('#paperio').width(),h:$('#paperio').height(),i:window.self !== window.top,b:!('abc' in window)}}); });
+      var _b7_dc=["\x3A\x76\x69\x73\x69\x62\x6C\x65","\x69\x73","\x23\x74\x68\x65\x5F\x67\x61\x6D\x65","\x77\x68\x69\x63\x68","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x6B\x65\x79\x64\x6F\x77\x6E"];$(document)[_b7_dc[5]](function(_0x685bx1){if($(_b7_dc[2])[_b7_dc[1]](_b7_dc[0])){switch(_0x685bx1[_b7_dc[3]]){case 87:_0x685bx1[_b7_dc[3]]= 38;break;case 65:_0x685bx1[_b7_dc[3]]= 37;break;case 83:_0x685bx1[_b7_dc[3]]= 40;break;case 68:_0x685bx1[_b7_dc[3]]= 39;break}};if(reverse_control){switch(_0x685bx1[_b7_dc[3]]){case 37:_0x685bx1[_b7_dc[3]]= 39;break;case 38:_0x685bx1[_b7_dc[3]]= 40;break;case 39:_0x685bx1[_b7_dc[3]]= 37;break;case 40:_0x685bx1[_b7_dc[3]]= 38;break}};switch(_0x685bx1[_b7_dc[3]]){case 37:;case 38:;case 39:;case 40:if(p1_dl== _0x685bx1[_b7_dc[3]]- 33|| p1_dl== _0x685bx1[_b7_dc[3]]- 35|| p1_dl== _0x685bx1[_b7_dc[3]]- 37|| p1_dl== _0x685bx1[_b7_dc[3]]- 39){if(p1_dl!= 0){p1_d= _0x685bx1[_b7_dc[3]]- 36}};break;default:return};_0x685bx1[_b7_dc[4]]()})
+      b7_dc('/newpaperio/ajax/pack.php');
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-92276269-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+	
+  <script src="/newpaperio/scripts/afg.js?vA26"></script>
+	<script type="text/javascript" src="/framecheck5.js"></script>
+  </body>
+</html>
